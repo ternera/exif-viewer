@@ -1,8 +1,13 @@
 {
-  "name": "EXIF Data Viewer",
+  "name": "EXIF Metadata Viewer",
   "version": "1.0",
   "manifest_version": 3,
-  "description": "A browser extension to display EXIF data of images directly on web pages.",
+  "description": "A browser extension to display EXIF/metadata information of images directly on web pages.",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
