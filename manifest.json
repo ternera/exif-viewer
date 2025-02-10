@@ -1,0 +1,29 @@
+{
+  "name": "EXIF Data Viewer",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "A browser extension to display EXIF data of images directly on web pages.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "exif.min.js",
+        "content.js"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
