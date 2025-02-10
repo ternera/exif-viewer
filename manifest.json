@@ -8,15 +8,6 @@
     "48": "icon.png",
     "128": "icon.png"
   },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": [
-        "exif.min.js",
-        "content.js"
-      ]
-    }
-  ],
   "background": {
     "service_worker": "background.js"
   },
@@ -24,9 +15,6 @@
     "activeTab",
     "contextMenus",
     "scripting"
-  ],
-  "host_permissions": [
-    "<all_urls>"
   ],
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self'"

@@ -22,12 +22,19 @@ try {
     chrome.contextMenus.onClicked.addListener((info, tab) => {
       if (info.menuItemId === "viewExif") {
         lastClick = { x: info.x, y: info.y };
-        chrome.tabs.sendMessage(tab.id, {
-          action: "showExif",
-          imgSrc: info.srcUrl,
-          pageUrl: info.pageUrl
-        }).catch(error => {
-          console.error('[EXIF Viewer] Error sending message:', error);
+        chrome.scripting.executeScript({
+          target: { tabId: tab.id },
+          files: ["exif.min.js", "content.js"]
+        }, () => {
+          chrome.tabs.sendMessage(tab.id, {
+            action: "showExif",
+            imgSrc: info.srcUrl,
+            pageUrl: info.pageUrl
+          }, response => {
+            if (chrome.runtime.lastError) {
+              console.error('[EXIF Viewer] Error sending message:', chrome.runtime.lastError);
+            }
+          });
         });
       }
     });
