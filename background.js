@@ -22,18 +22,30 @@ try {
     chrome.contextMenus.onClicked.addListener((info, tab) => {
       if (info.menuItemId === "viewExif") {
         lastClick = { x: info.x, y: info.y };
+        // First inject and execute exif.min.js
         chrome.scripting.executeScript({
           target: { tabId: tab.id },
-          files: ["exif.min.js", "content.js"]
+          files: ["exif.min.js"]
         }, () => {
-          chrome.tabs.sendMessage(tab.id, {
-            action: "showExif",
-            imgSrc: info.srcUrl,
-            pageUrl: info.pageUrl
-          }, response => {
+          if (chrome.runtime.lastError) {
+            console.error('[EXIF Viewer] Error injecting exif.min.js:', chrome.runtime.lastError);
+            return;
+          }
+          // Then inject and execute content.js
+          chrome.scripting.executeScript({
+            target: { tabId: tab.id },
+            files: ["content.js"]
+          }, () => {
             if (chrome.runtime.lastError) {
-              console.error('[EXIF Viewer] Error sending message:', chrome.runtime.lastError);
+              console.error('[EXIF Viewer] Error injecting content.js:', chrome.runtime.lastError);
+              return;
             }
+            // Finally send the message
+            chrome.tabs.sendMessage(tab.id, {
+              action: "showExif",
+              imgSrc: info.srcUrl,
+              pageUrl: info.pageUrl
+            });
           });
         });
       }
