@@ -1,0 +1,34 @@
+{
+  "extName": {
+    "message": "EXIF メタデータビューア",
+    "description": "The name of the extension"
+  },
+  "extDescription": {
+    "message": "右クリックひとつで、あらゆる画像のEXIFメタデータを瞬時に表示 - カメラ設定、GPS位置情報、撮影日時など。写真家、セキュリティ研究者、プライバシー重視のユーザーに最適です。",
+    "description": "The description of the extension"
+  },
+  "contextMenuTitle": {
+    "message": "EXIFデータを表示",
+    "description": "Title of the context menu item"
+  },
+  "exifDataTitle": {
+    "message": "EXIFデータ",
+    "description": "Title in the EXIF data popup"
+  },
+  "noExifData": {
+    "message": "EXIFデータが見つかりません",
+    "description": "Message when no EXIF data is found"
+  },
+  "errorLoadingImage": {
+    "message": "画像データを読み込めませんでした",
+    "description": "Error message when image loading fails"
+  },
+  "errorAccessingImage": {
+    "message": "画像データにアクセスできませんでした",
+    "description": "Error message when accessing image fails"
+  },
+  "infoNoExifFound": {
+    "message": "画像にEXIFデータが見つかりません",
+    "description": "Information when no EXIF data is found in image"
+  }
+}

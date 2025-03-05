@@ -1,0 +1,34 @@
+{
+  "extName": {
+    "message": "عارض بيانات EXIF التعريفية",
+    "description": "The name of the extension"
+  },
+  "extDescription": {
+    "message": "اعرض فوراً بيانات EXIF التعريفية لأي صورة - إعدادات الكاميرا، موقع GPS، تاريخ الالتقاط والمزيد بنقرة سريعة بزر الماوس الأيمن. مثالي للمصورين، باحثي الأمن، والمستخدمين المهتمين بالخصوصية.",
+    "description": "The description of the extension"
+  },
+  "contextMenuTitle": {
+    "message": "عرض بيانات EXIF",
+    "description": "Title of the context menu item"
+  },
+  "exifDataTitle": {
+    "message": "بيانات EXIF",
+    "description": "Title in the EXIF data popup"
+  },
+  "noExifData": {
+    "message": "لم يتم العثور على بيانات EXIF",
+    "description": "Message when no EXIF data is found"
+  },
+  "errorLoadingImage": {
+    "message": "تعذر تحميل بيانات الصورة",
+    "description": "Error message when image loading fails"
+  },
+  "errorAccessingImage": {
+    "message": "تعذر الوصول إلى بيانات الصورة",
+    "description": "Error message when accessing image fails"
+  },
+  "infoNoExifFound": {
+    "message": "لم يتم العثور على بيانات EXIF في الصورة",
+    "description": "Information when no EXIF data is found in image"
+  }
+}

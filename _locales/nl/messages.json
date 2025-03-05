@@ -1,0 +1,34 @@
+{
+  "extName": {
+    "message": "EXIF Metadata Viewer",
+    "description": "The name of the extension"
+  },
+  "extDescription": {
+    "message": "Bekijk direct EXIF-metadata voor elke afbeelding - camera-instellingen, GPS-locatie, opnamedatum en meer met een snelle rechtermuisklik. Perfect voor fotografen, beveiligingsonderzoekers en gebruikers gericht op privacy.",
+    "description": "The description of the extension"
+  },
+  "contextMenuTitle": {
+    "message": "EXIF-gegevens bekijken",
+    "description": "Title of the context menu item"
+  },
+  "exifDataTitle": {
+    "message": "EXIF-gegevens",
+    "description": "Title in the EXIF data popup"
+  },
+  "noExifData": {
+    "message": "Geen EXIF-gegevens gevonden",
+    "description": "Message when no EXIF data is found"
+  },
+  "errorLoadingImage": {
+    "message": "Kan afbeeldingsgegevens niet laden",
+    "description": "Error message when image loading fails"
+  },
+  "errorAccessingImage": {
+    "message": "Kan geen toegang krijgen tot afbeeldingsgegevens",
+    "description": "Error message when accessing image fails"
+  },
+  "infoNoExifFound": {
+    "message": "Geen EXIF-gegevens gevonden in afbeelding",
+    "description": "Information when no EXIF data is found in image"
+  }
+}

@@ -5,7 +5,7 @@ try {
     try {
       chrome.contextMenus.create({
         id: "viewExif",
-        title: "View EXIF Data",
+        title: chrome.i18n.getMessage("contextMenuTitle"),
         contexts: ["image"],
         documentUrlPatterns: ["*://*/*", "file:///*"]
       }, () => {

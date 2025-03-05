@@ -1,0 +1,34 @@
+{
+  "extName": {
+    "message": "EXIF 元数据查看器",
+    "description": "The name of the extension"
+  },
+  "extDescription": {
+    "message": "通过快速右键点击，即时查看任何图像的EXIF元数据 - 相机设置、GPS位置、拍摄日期等。非常适合摄影师、安全研究人员和注重隐私的用户。",
+    "description": "The description of the extension"
+  },
+  "contextMenuTitle": {
+    "message": "查看 EXIF 数据",
+    "description": "Title of the context menu item"
+  },
+  "exifDataTitle": {
+    "message": "EXIF 数据",
+    "description": "Title in the EXIF data popup"
+  },
+  "noExifData": {
+    "message": "未找到 EXIF 数据",
+    "description": "Message when no EXIF data is found"
+  },
+  "errorLoadingImage": {
+    "message": "无法加载图像数据",
+    "description": "Error message when image loading fails"
+  },
+  "errorAccessingImage": {
+    "message": "无法访问图像数据",
+    "description": "Error message when accessing image fails"
+  },
+  "infoNoExifFound": {
+    "message": "图像中未找到 EXIF 数据",
+    "description": "Information when no EXIF data is found in image"
+  }
+}

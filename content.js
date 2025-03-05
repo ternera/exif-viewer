@@ -51,19 +51,19 @@ function showExifTooltip(img) {
             if (Object.keys(data).length > 0) {
               createTooltip(data, img);
             } else {
-              createTooltip({ "Info": "No EXIF data found in image" }, img);
+              createTooltip({ "Info": chrome.i18n.getMessage("infoNoExifFound") }, img);
             }
           });
         };
         newImg.onerror = function() {
           console.error('[EXIF Viewer] Error loading image');
-          createTooltip({ "Error": "Could not load image data" }, img);
+          createTooltip({ "Error": chrome.i18n.getMessage("errorLoadingImage") }, img);
         };
         newImg.src = objectUrl;
       })
       .catch(error => {
         console.error('[EXIF Viewer] Error fetching image:', error);
-        createTooltip({ "Error": "Could not access image data" }, img);
+        createTooltip({ "Error": chrome.i18n.getMessage("errorAccessingImage") }, img);
       });
   } catch (error) {
     console.error('[EXIF Viewer] Error showing tooltip:', error);
@@ -95,7 +95,7 @@ function createTooltip(data, img) {
     });
   tooltip.innerHTML = `
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-            <strong>EXIF Data</strong>
+            <strong>${chrome.i18n.getMessage("exifDataTitle")}</strong>
             <div class="exif-close-btn" style="
                 cursor: pointer;
                 color: #999;
@@ -106,7 +106,7 @@ function createTooltip(data, img) {
             ">×</div>
         </div>
         <div style="line-height: 1.5;">
-            ${formattedData.length ? formattedData.join('') : 'No EXIF data found'}
+            ${formattedData.length ? formattedData.join('') : chrome.i18n.getMessage("noExifData")}
         </div>
     `;
   document.body.appendChild(tooltip);

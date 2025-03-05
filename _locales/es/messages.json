@@ -1,0 +1,34 @@
+{
+  "extName": {
+    "message": "Visor de Metadatos EXIF",
+    "description": "The name of the extension"
+  },
+  "extDescription": {
+    "message": "Visualiza instantáneamente los metadatos EXIF de cualquier imagen: configuración de cámara, ubicación GPS, fecha de captura y más con un simple clic derecho. Perfecto para fotógrafos, investigadores de seguridad y usuarios centrados en la privacidad.",
+    "description": "The description of the extension"
+  },
+  "contextMenuTitle": {
+    "message": "Ver Datos EXIF",
+    "description": "Title of the context menu item"
+  },
+  "exifDataTitle": {
+    "message": "Datos EXIF",
+    "description": "Title in the EXIF data popup"
+  },
+  "noExifData": {
+    "message": "No se encontraron datos EXIF",
+    "description": "Message when no EXIF data is found"
+  },
+  "errorLoadingImage": {
+    "message": "No se pudo cargar la imagen",
+    "description": "Error message when image loading fails"
+  },
+  "errorAccessingImage": {
+    "message": "No se pudo acceder a los datos de la imagen",
+    "description": "Error message when accessing image fails"
+  },
+  "infoNoExifFound": {
+    "message": "No se encontraron datos EXIF en la imagen",
+    "description": "Information when no EXIF data is found in image"
+  }
+}

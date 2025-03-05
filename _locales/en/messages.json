@@ -1,0 +1,34 @@
+{
+  "extName": {
+    "message": "EXIF Metadata Viewer - Find Information About Images",
+    "description": "The name of the extension"
+  },
+  "extDescription": {
+    "message": "View EXIF metadata from images - camera settings, GPS location and more with a right-click. For photographers and privacy users.",
+    "description": "The description of the extension"
+  },
+  "contextMenuTitle": {
+    "message": "View EXIF Data",
+    "description": "Title of the context menu item"
+  },
+  "exifDataTitle": {
+    "message": "EXIF Data",
+    "description": "Title in the EXIF data popup"
+  },
+  "noExifData": {
+    "message": "No EXIF data found",
+    "description": "Message when no EXIF data is found"
+  },
+  "errorLoadingImage": {
+    "message": "Could not load image data",
+    "description": "Error message when image loading fails"
+  },
+  "errorAccessingImage": {
+    "message": "Could not access image data",
+    "description": "Error message when accessing image fails"
+  },
+  "infoNoExifFound": {
+    "message": "No EXIF data found in image",
+    "description": "Information when no EXIF data is found in image"
+  }
+}
