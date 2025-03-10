@@ -1,7 +1,7 @@
 # EXIF Metadata Viewe
  Ever wondered about the story behind a photo you see online? The EXIF Metadata Viewer extension lets you instantly reveal the hidden details embedded within images, directly from the context menu in your browser.
 
-![Example usage](exif.png)
+![Example usage](screenshot2.png)
 
 All you need to do is right-click on an image to find out if the image has the following details stored:
 
