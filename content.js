@@ -88,7 +88,10 @@ function createTooltip(data, img) {
   const formattedData = Object.entries(data)
     .filter(([key]) => key !== '_raw')
     .map(([key, value]) => {
-      const label = key.replace(/([A-Z])/g, ' $1').trim();
+      let label = key.replace(/([A-Z])/g, ' $1').trim();
+      
+      label = label.replace(/G P S/, 'GPS');
+      
       return `<div style="margin-bottom: 4px;">
                 <strong>${label}:</strong> ${value}
             </div>`;
