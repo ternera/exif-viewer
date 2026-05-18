@@ -4,7 +4,7 @@
     "description": "The name of the extension"
   },
   "extDescription": {
-    "message": "View EXIF metadata from images - camera settings, GPS location and more with a right-click. For photographers and privacy users.",
+    "message": "View EXIF metadata from images - camera settings, GPS location, capture date, and more with a right-click. For photographers and privacy users.",
     "description": "The description of the extension"
   },
   "contextMenuTitle": {

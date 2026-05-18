@@ -20,7 +20,7 @@
     "description": "Message when no EXIF data is found"
   },
   "errorLoadingImage": {
-    "message": "No se pudo cargar la imagen",
+    "message": "No se pudieron cargar los datos de la imagen",
     "description": "Error message when image loading fails"
   },
   "errorAccessingImage": {
